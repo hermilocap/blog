@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+</head>
+<body>
+<header>
+	<nav class="be-red white-large-padding">
+	
+	<ul class="no-list row center-xs">
+	<li class="col-md">
+	<h1 class="no-margin">Blog Hermilo</h1>
+	</li>
+	<li class="col-md"><%= link_to "Inicio", root_path %></li>
+	<li class="col-md">Programacion</li>
+	<li class="col-md">Diseño</li>
+	</ul>
+		
+	</nav>
+</header>
+<%= yield %>
+
+</body>
+</html>

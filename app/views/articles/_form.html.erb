@@ -1,0 +1,18 @@
+
+<%= form_for(@article) do |f| %>
+<% @article.errors.full_messages.each  do |message| %>
+<div  class="be-red white">
+*<%=message %>
+</div>
+<%end%>
+<div class="fild">
+<%= f.text_field :title, placeholder:"Titulo"%>	
+</div>
+
+<div class="field">
+<%= f.text_area :body, placeholder:"Body",style:"height:250px;"%>	
+</div>
+<div>
+	<%= f.submit "Guardar"%>
+</div>
+<%end%>

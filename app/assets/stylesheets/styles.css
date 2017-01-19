@@ -1,0 +1,23 @@
+html,body
+{
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+.no-margin
+{
+	margin: 0px;
+}
+.be-red{
+	background-color: red;
+}
+.white{
+	color: white;
+
+}
+.large-padding{
+	padding: 15px 10px;
+}
+.white
+{
+	color: white;
+}
